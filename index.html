@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="#dbeafe" name="theme-color"/>
+  <meta content="#dbeafe" name="msapplication-navbutton-color"/>
+  <meta content="#dbeafe" name="apple-mobile-web-app-status-bar-style"/>
+  <title>PENGHITUNG TANGGALAN</title>
+  <meta name="description" content="Penghitung tanggalan online untuk menghitung tanggal di masa depan berdasarkan penambahan jumlah hari dari tanggal tertentu. Mudah, cepat, dan gratis.">
+  <meta name="robots" content="follow, noindex"/>
+  <link rel="canonical" href="https://penghitung-tanggalan.mediahub.web.id/"/>
+  <link href='/assets/favicon/icon32.png' rel='icon' sizes='32x32'/>
+  <link href='/assets/favicon/icon192.png' rel='icon' sizes='192x192'/>
+  <link href='/assets/favicon/icon180.png' rel='apple-touch-icon' sizes='180x180'/>
+  <meta content='/assets/favicon/icon144.png' name='msapplication-TileImage'/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <h1>PENGHITUNG TANGGALAN</h1>
+    <p class="subtitle">Penghitung tanggalan online untuk menghitung tanggal berdasarkan penambahan jumlah hari dari tanggal tertentu.</p>
+
+    <form id="dateForm">
+
+      <div class="card">
+
+        <div class="card-header">
+          <h2 class="startdate">Tanggal Mulai</h2>
+          <button type="button" id="todayBtn" class="today-btn">Hari Ini</button>
+        </div>
+
+        <div class="date-row">
+
+          <div class="field">
+            <input type="number" id="day" placeholder="10" required>
+          </div>
+
+          <div class="field">
+            <select id="month"></select>
+          </div>
+
+          <div class="field">
+            <select id="year"></select>
+          </div>
+
+        </div>
+
+        <p id="errorMessage" class="error"></p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h2>Tambahkan Hari</h2>
+
+        <div class="form-group-inline">
+          <input type="number" id="addDays" placeholder="Masukkan jumlah hari" required>
+          <span>Hari</span>
+        </div>
+
+      </div>
+
+
+      <button type="submit">Hitung Tanggal</button>
+
+    </form>
+
+
+    <div class="result">
+      <h3>Hasil Tanggal:</h3>
+      <p id="resultDate">-</p>
+    </div>
+
+  </div>
+
+<footer class="footer">
+  <div class="credit">
+    <p>Create by. <a href="https://indradp.web.id/" target="_blank" rel="nofollow noopener">Indra DP</a></p>
+    <p class="support">Dukung Indra di <a href="https://saweria.co/indradp" target="_blank" rel="nofollow noopener">Saweria</a></p>
+  </div>
+</footer>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
